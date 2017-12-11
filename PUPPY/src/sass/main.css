@@ -1,12 +1,13 @@
 @import '_reset.scss';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 *{}
 
 body{
   background: #FAFAFA;
   overflow-x: hidden;
-
+  font-family: 'Montserrat', sans-serif;
 }
 
 .animate-in {
@@ -72,32 +73,47 @@ header{
 	top: 50px;
 	bottom: 0;
   border: solid 1px #ccc;
-	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans', sans-serif;*/
+  font-family: 'Montserrat', sans-serif;
 }
 
-.container .profpic{
+.container .card .profpic{
   border: 2px solid red;
   border-radius: 1px;
   width: 125px;
   height: 125px;
   padding-top: 10px;
   margin:auto;
+  background-color: #34495e;
 }
 
 .container .name{
+  padding: 7px;
   text-align: center;
+  font-size: 16px;
+  color: #fff;
+  background-color: #34495e;
 }
 
 .container .sekami{
+  background-color: #2980b9;
    text-align: center;
+   margin:auto;
 }
 
-.container .following{
-  padding: 5px;
+.container .card .following{
+  line-height:  2;
+  weight: 50%;
   display: inline-block;
   vertical-align: middle;
 }
 
+.container .card .following .numbers{
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
 
 	.container .card{
 		background: #fff;
