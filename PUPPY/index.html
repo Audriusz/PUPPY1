@@ -10,17 +10,17 @@
 <meta name="mobile-web-app-capable" content="yes">
 </head>
 
-<body>
+<body class="animate-in">
 	<center><div id="logo"><i class="fa fa-hashtag" aria-hidden="true"></i>PUPPY</div></center>
 	<header>
-		<a href="home.html"> <i class="fa fa-home" aria-hidden="true"></i> </a>
+		<a href="index.html"> <i class="fa fa-home" aria-hidden="true"></i> </a>
 		<a href="search.html"> <i class="fa fa-search" aria-hidden="true"></i> </a>
 		<a type="file"><i class="fa fa-plus" aria-hidden="true"></i></a>
 		<a href="likes.html"> <i class="fa fa-heart" aria-hidden="true"></i> </a>
 		<a href="profile.html"> <i class="fa fa-user" aria-hidden="true"></i> </a>
 	</header>
-
 	<section class="container">
+		<br>
 		<div class="card">
 			<div class="card-header">
 				<div class="profile-img">
@@ -73,7 +73,12 @@
 		<br>
 		<br><br>
 	</section>
+<script>
+window.addEventListener("beforeunload", function () {
+  document.body.classList.add("animate-out");
+});
 
+</script>
 </body>
 
 </html>
