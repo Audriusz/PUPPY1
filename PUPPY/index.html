@@ -8,7 +8,18 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
+<style>
 
+.up {
+    opacity: 0;
+    position: absolute;
+		height: 50px;
+		width: 50px;
+		margin-left: -35px;
+		margin-top: -15px;
+		border: 2px solid black;
+}
+</style>
 
 </head>
 
@@ -17,7 +28,7 @@
 	<header>
 		<a href="index.html"> <i class="fa fa-home" aria-hidden="true"></i> </a>
 		<a href="search.html"> <i class="fa fa-search" aria-hidden="true"></i> </a>
-		<a type="file"><i class="fa fa-plus" aria-hidden="true"></i></a>
+		<a href="#"><i class="fa fa-plus" aria-hidden="true"></i><input type="file" class="up" value="" /></a>
 		<a href="likes.html"> <i class="fa fa-heart" aria-hidden="true"></i> </a>
 		<a href="profile.html"> <i class="fa fa-user" aria-hidden="true"></i> </a>
 	</header>
