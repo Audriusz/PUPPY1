@@ -4,7 +4,14 @@
 *{}
 
 body{
-  background: #fff;
+  background: #FAFAFA;
+}
+
+#logo {
+  color: red;
+  padding: 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
 }
 
 
@@ -37,7 +44,7 @@ header{
 
 .container{
 	background: #FAFAFA;
-	padding-top: 50px;
+	padding-top: 0px;
 	position: absolute;
 	width: 100%;
 	top: 50px;
@@ -51,7 +58,7 @@ header{
 		margin: 0 auto;
 		max-width: 500px;
 		border: 1px solid #ccc;
-		border-radius: 3px;
+		border-radius: 7px;
 		overflow: hidden;
 		}
 	.container .card-header{
