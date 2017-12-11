@@ -1,0 +1,167 @@
+@import '_reset.scss';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*{}
+
+body{
+  background: #fff;
+}
+
+
+header{
+	background: #FAFAFA;
+	border-bottom: 1px solid #ccc;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 20;
+
+
+}
+	header a{
+		box-sizing: border-box;
+		width: 19.5%;
+		display: inline-block;
+		margin-left: -2px;
+		text-align: center;
+		padding: 12px;
+		}
+	header .fa{
+		color: 111;
+		font-size: 25px;
+		}
+	header a:hover .fa-heart{
+		color: red;
+		}
+
+.container{
+	background: #FAFAFA;
+	padding-top: 50px;
+	position: absolute;
+	width: 100%;
+	top: 50px;
+	bottom: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+	.container .card{
+		background: #fff;
+		margin: 0 auto;
+		max-width: 500px;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		overflow: hidden;
+		}
+	.container .card-header{
+		padding: 15px;
+
+	}
+		.container .card-header .profile-img{
+			display: inline-block;
+			background: red;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			position: relative;
+			top: 3px;
+			margin-right: 5px;
+		}
+
+		.container .card-header .profile-info{
+			display: inline-block;
+		}
+			.container .card-header .profile-info .name{
+				font-size:14px;
+				color: #111;
+				font-weight: 700;
+			}
+			.container .card-header .profile-info .location{
+				font-size: 12px;
+				color: #111;
+			}
+
+		.container .card-header .time{
+			font-size: 10px;
+			float: right;
+			display: inline-block;
+			top: 10px;
+			position: relative;
+		}
+
+	.container .content img{
+		width: 100%;
+	}
+
+	.container .card-footer{
+		padding: 15px;
+	}
+		.container .card-footer .description{
+
+		}
+
+			.container .card-footer .likes{
+				color: #111;
+				font-size: 12px;
+				padding-bottom: 10px;
+			}
+			.container .card-footer .description p{
+				font-size: 12px;
+				margin: 0;
+				padding: 0 0 5px 0;
+			}
+				.container .card-footer .description .username{
+					font-weight: 700;
+				}
+		.container .card-footer .comments{
+
+		}
+			.container .card-footer .comments p{
+				font-size: 12px;
+				margin: 0;
+				padding: 0 0 5px 0;
+			}
+				.container .card-footer .comments .username{
+					font-weight: 700;
+				}
+		.container .card-footer form{
+			padding-top: 15px;
+		}
+			.container .card-footer form .heart{
+				display: inline-block;
+				width: 7%
+		}
+				.container .card-footer form .heart .fa{
+					position: relative;
+					top: 3px;
+			}
+			.container .card-footer form .add-comment{
+				display: inline-block;
+				width: 85%
+		}
+				.container .card-footer form .add-comment input{
+					width: 100%;
+					padding: 5px;
+					font-weight: 16px;
+					border: 0px solid #fff;
+			}
+				.container .card-footer form .add-comment input:focus{
+					outline: none;
+			}
+			.container .card-footer form .options{
+				display: inline-block;
+				width: 5%;
+				float: right;
+		}
+				.container .card-footer form .options .fa{
+					position: relative;
+					top: 3px;
+			}
+			.container .card-footer form .fa{
+			font-size: 24px;
+		}
+
+		hr{
+		padding: 0;
+		}

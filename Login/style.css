@@ -1,0 +1,168 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    left: 50%;
+    margin-left: -512px;
+  }
+}
+
+.loginBox {
+	transition: all 0.5s;
+	margin: auto;
+    width: 25%;
+    padding: 10px;
+	
+	position: absolute;
+	top: 25%;
+	left: 35%;
+	min-height: 200px;
+	background: #fff;
+	border-radius: 15px;
+	box-size: border-box;
+	-webkit-appearance: none;
+}
+
+@media (max-width: 600px) {
+   .loginBox {
+	transition: all 0.5s;
+    width: 90%;
+	top: 50%;
+	left: 2%;
+	margin-top: 25%;
+	height: 350px;
+	border-radius: 0px;
+  }
+}
+.user {
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 20px;
+}
+h3 {
+	margin: 0;
+	padding: 0 0 20px;
+	color: #e74c3c;
+	text-align: center;
+	font-size: 25px;
+}
+.loginBox input {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.loginBox input[type="email"],
+.loginBox input[type="password"] {
+	border:none;
+	border-bottom: 2px solid #262626;
+	outline: none;
+	height: 40px;
+	color: #262626;
+	background: transparent;
+	font-size: 16px;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+
+.loginBox input[type="email"]:focus,
+.loginBox input[type="password"]:focus{
+	transition:border-bottom 0.5s;
+	border-bottom: 2px solid #e74c3c;
+}
+.inputBox {
+	position: relative;
+}
+
+.inputBox span{
+	top: 10px;
+	margin: 10px;
+	color: #e74c3c;
+}
+.loginBox input[type="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	font-size: 16px;
+	background: #e74c3c;
+	color: #fff;
+	border-radius: 20px;
+	-webkit-appearance: none;
+}
+
+.loginBox a {
+	color: #262626;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  margin: -75px 0 0 -75px;
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid #e74c3c;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@media (max-width: 600px) {
+   #loader {
+  left: 60%;
+  top: 55%;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+  
+}
+
+
+	
