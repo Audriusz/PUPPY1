@@ -50,7 +50,22 @@ header{
 	width: 100%;
 	top: 50px;
 	bottom: 0;
+  border: solid 1px #ccc;
 	font-family: 'Open Sans', sans-serif;
+}
+
+.container .name{
+  text-align: center;
+}
+
+.container .sekami{
+   text-align: center;
+}
+
+.container .following{
+  padding: 5px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 
