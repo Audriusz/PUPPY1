@@ -217,3 +217,7 @@ header{
 		hr{
 		padding: 0;
 		}
+
+    video {
+    max-width: 100%;
+}
